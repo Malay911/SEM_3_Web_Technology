@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+</head>
+<body>
+  <h2>Find Positions and Substring Between First and Last 'a'</h2>
+  <label for="inputWord">Enter a word:</label>
+  <input type="text" id="inputWord">
+  <button onclick="findAndDisplay()">Find Positions and Substring</button>
+  <div id="result"></div>
+
+  <script>
+    function findAndDisplay() {
+      var inputWord = document.getElementById('inputWord').value.trim().toLowerCase();
+      var firstIndex = inputWord.indexOf('a');
+      var lastIndex = inputWord.lastIndexOf('a');
+
+      if (firstIndex === -1) {
+        document.getElementById('result').textContent = 'No vowel "a" found in the word.';
+        return;
+      }
+
+      var substring = inputWord.substring(firstIndex + 1, lastIndex);
+      var output = 'First occurrence of "a" - position ' + (firstIndex + 1) + '<br>';
+      output += 'Last occurrence of "a" - position ' + (lastIndex + 1) + '<br>';
+      output += 'String between them: ' + substring;
+
+      document.getElementById('result').innerHTML = output;
+    }
+  </script>
+</body>
+</html>

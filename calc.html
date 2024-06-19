@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+</head>
+<body>
+     <script>
+        a=prompt("Enter operator:");
+        let b=parseInt(prompt("Enter first number:"));
+        let c=parseInt(prompt("Enter second number:"));
+        if(a=="+"){
+            document.write(b+c);
+        }
+        else if(a=="-"){
+            document.write(b-c);
+        }
+        else if(a=="*"){
+            document.write(b*c);
+        }
+        else if(a=="/"){
+            document.write(b/c);
+        }
+        else{
+            document.write("Invalid operator");
+        }
+     </script>
+</body>
+</html>

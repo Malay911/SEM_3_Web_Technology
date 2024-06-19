@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [1,2,7,4,5];
+        let b = a[0];
+        for(let i = 0;i<a.length;i++){
+            if(b<a[i] || b==a[i]){
+                b=a[i];
+            }
+        }
+
+        // for(let i of a){
+        //     document.write("Max is"+b);
+        // }
+
+        document.write("Max number is : "+b);
+
+    </script>
+</body>
+</html>
