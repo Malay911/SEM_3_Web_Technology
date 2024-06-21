@@ -1,0 +1,40 @@
+<!-- Demonstrate different array functions like push, pop, shift, unshift, splice, sort etc… -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a= [1, 2, 3, 4, 5];
+        let b=['a','b','c','e','d']
+        //push
+        a.push(6);
+        console.log(a);
+        //pop
+        a.pop();
+        console.log(a);
+        //shift
+        a.shift(1);
+        console.log(a);
+        //unshift
+        a.unshift(0);
+        console.log(a);
+        //splice
+        a.splice(2, 0, 2.5);
+        console.log(a);
+        //Slice
+        a.slice(1,2);
+        console.log(a);
+        //sort
+        b.sort();
+        console.log(b);
+        //reverse
+        a.reverse();
+        console.log(a);
+    </script>
+</body>
+</html>

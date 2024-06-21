@@ -1,0 +1,49 @@
+<!-- WAP to display Faculties stored in array. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[
+            {
+                "Id":1,
+                "Name":"Arjun Bala",
+                "Designation":"Professor",
+                "Department":"CSE",
+                "Salary":"100000",
+                "Experience":"10"
+            },
+            {
+                "Id":2,
+                "Name":"Arjun Bala",
+                "Designation":"Professor",
+                "Department":"CSE",
+                "Salary":"100000",
+                "Experience":"10"
+            },
+            {
+                "Id":3,
+                "Name":"Arjun Bala",
+                "Designation":"Professor",
+                "Department":"CSE",
+                "Salary":"100000",
+                "Experience":"10"
+            }
+        ]
+        for(i=0;i<a.length;i++){
+            document.write(a[i].Id+'   ');
+            document.write(a[i].Name+'   ');
+            document.write(a[i].Designation+'   ');
+            document.write(a[i].Department+'   ');
+            document.write(a[i].Salary+'   ');
+            document.write(a[i].Experience+'   ');
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!-- WAP to display students stored in array. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let students = [
+            {
+                name: "Malay",
+                age: 20,
+                gender: "Male"
+            },
+            {
+                name: "Rahul",
+                age: 21,
+                gender: "Male"
+            },
+            {
+                name: "Raj",
+                age: 22,
+                gender: "Male"
+            },
+            {
+                name: "Raju",
+                age: 23,
+                gender: "Male"
+            },
+            {
+                name: "Ram",
+                age: 24,
+                gender: "Male"
+            }
+        ];
+        for (let i = 0; i < students.length; i++) {
+            document.write(students[i].name + "<br>");
+            document.write(students[i].age + "<br>");
+            document.write(students[i].gender + "<br>");
+            document.write("---------");
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
