@@ -1,0 +1,53 @@
+<!-- WAP to create a static login page using HTML and JavaScript. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #username{
+        background-color: white;
+        border-radius: 5px;
+    }
+    #password{
+        background-color: white;
+        border-radius: 5px;
+    }
+    .lgn{
+        margin-left: 250px;
+        background-color: rgb(68, 68, 196);
+        border-radius: 5px;
+    }
+    .usr{
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+    .pass{
+        margin-left: 150px;
+    }
+</style>
+<body>
+    <form class="container">
+        <div class="usr">
+        <label for="username"style="color: black;">Username</label>
+        <input type="text" id="username"></div><br><br>
+        <div class="pass"><label for="password" style="color: black;">Password</label>
+        <input type="password" id="password"></div><br><br>
+        <button type="submit" onclick="login()" class="lgn">Login</button>
+    </form>
+    <script>
+        function login(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if(username == "admin" && password == "admin"){
+                alert("Login Successful");
+            }
+            else{
+                alert("Login Failed");
+            }
+        }
+    </script>
+</body>
+</html>
