@@ -1,0 +1,85 @@
+<!-- WAP to create a basic graphical Calculator using HTML and JavaScript. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 400px;
+        height: 500px;
+        background-color: black;
+    }
+
+    .buttons {
+        width: 350px;
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+
+    .buttons button {
+        width: 60px;
+        height: 45px;
+        background-color: yellow;
+        border-radius: 15px;
+    }
+
+    #input1 {
+        width: 350px;
+        border-radius: 10px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div>
+            <input type="text" id="input1">
+        </div>
+        <div class="buttons">
+            <button onclick="disp('1')">1</button>
+            <button onclick="disp('2')">2</button>
+            <button onclick="disp('3')">3</button>
+            <button onclick="disp('+')">+</button>
+        </div>
+        <div class="buttons">
+            <button onclick="disp('4')">4</button>
+            <button onclick="disp('5')">5</button>
+            <button onclick="disp('6')">6</button>
+            <button onclick="disp('-')">-</button>
+        </div>
+        <div class="buttons">
+            <button onclick="disp('7')">7</button>
+            <button onclick="disp('8')">8</button>
+            <button onclick="disp('9')">9</button>
+            <button onclick="disp('*')">*</button>
+        </div>
+        <div class="buttons">
+            <button onclick="disp('/')">/</button>
+            <button onclick="clr()">C</button>
+            <button onclick="solve()">=</button>
+            <button onclick="disp('0')">0</button>
+        </div>
+    </div>
+    <script>
+        function disp(val) {
+            var x = document.getElementById("input1").value;
+            document.getElementById("input1").value = x + val;
+        }
+        function clr() {
+            document.getElementById("input1").value = ""
+        }
+        function solve() {
+            var x = document.getElementById("input1").value;
+            var y = eval(x);
+            document.getElementById("input1").value = y;
+        }
+    </script>
+</body>
+
+</html>
