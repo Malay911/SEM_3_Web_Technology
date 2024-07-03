@@ -1,0 +1,18 @@
+<!-- WAP to recognize which mouse event is ƒired. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Key</button>
+    <script>
+        btn = document.getElementById('btn')
+        document.addEventListener('keydown',() =>{btn.innerHTML='keydownned'})
+        document.addEventListener('keyup',() =>{btn.innerHTML='keyup'})
+        document.addEventListener('keypress',() =>{btn.innerHTML='keypressed'})
+    </script>
+</body>
+</html>

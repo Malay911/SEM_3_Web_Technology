@@ -1,0 +1,23 @@
+<!-- WAP to recognize which form event is ƒired. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return false;">
+        <button onclick="display('submit')" type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <script>
+        document.addEventListener('submit',() =>display('Submitted'));
+        document.addEventListener('reset',() =>display('Reset'));
+        function display(id){
+            console.log("id is:"+id);
+            return false
+        }
+    </script>
+</body>
+</html>

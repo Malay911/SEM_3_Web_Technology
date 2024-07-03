@@ -1,0 +1,35 @@
+<!-- WAP to demonstrate change in properties of HTML element using JavaScript. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="abc">
+    <button onclick="fn()">click me!</button>
+    <script>
+        function fn(){
+            var x = document.getElementById("abc");
+            x.style.color = "red";
+            x.style.backgroundColor = "yellow";
+            x.style.fontSize = "50px";
+        }
+    </script>
+    <!-- <script> 
+		let te = document.getElementById('abc')
+		vl = 'text';
+		function fn(){
+			if(vl=='text'){
+				te.type='date';
+				vl='date'
+			}
+			else{
+			te.type='text';
+			vl='text'
+			}
+		}
+	</script> -->
+</body>
+</html>
