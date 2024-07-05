@@ -1,4 +1,4 @@
-<!-- WAP to demonstrate change in properties of HTML element using JavaScript. -->
+<!-- WAP to demonstrate change in properties of HTML element using JavaScript -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,29 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="abc">
-    <button onclick="fn()">click me!</button>
+    <h1 id="hlw">Hello World</h1>
+    <button onclick="clic()">Click here!</button>
     <script>
-        function fn(){
-            var x = document.getElementById("abc");
-            x.style.color = "red";
-            x.style.backgroundColor = "yellow";
-            x.style.fontSize = "50px";
+        var h1Element = document.getElementById("hlw");
+        h1Element.style.color = "red";
+        h1Element.style.fontSize = "20px";
+        h1Element.style.fontFamily = "Arial";
+        function clic(){
+            h1Element.style.color = "blue";
+            h1Element.style.fontSize = "36px";
         }
     </script>
-    <!-- <script> 
-		let te = document.getElementById('abc')
-		vl = 'text';
-		function fn(){
-			if(vl=='text'){
-				te.type='date';
-				vl='date'
-			}
-			else{
-			te.type='text';
-			vl='text'
-			}
-		}
-	</script> -->
 </body>
 </html>
