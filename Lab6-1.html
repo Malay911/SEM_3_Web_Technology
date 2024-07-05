@@ -1,4 +1,4 @@
-<!-- WAP to change background color on click of button. -->
+<!-- WAP to change background color on click of button -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<!-- <body>
-    <button onclick="changeColor()">Change Color</button>
-    <script>
-        function changeColor() {
-            document.body.style.backgroundColor = "red";
-        }
-    </script>
-</body> -->
 <body id="bod">
-	<button id="btn" onclick="clickm()">click me</button>
+	<!-- <button id="btn" onclick="clickm()">click me</button> -->
+    <button onclick="startclr()">Start</button>
+    <button onclick="stopclr()">Stop</button>
 	<script> 
 		body = document.getElementById('bod')
-		function clickm(){
-			a = Math.random()*255;
-			b = Math.random()*255;
-			c = Math.random()*255;
-			body.style.backgroundColor =`rgb(${a},${b},${c})`
-		}
+		// function clickm(){
+		// 	a = Math.random()*255;
+		// 	b = Math.random()*255;
+		// 	c = Math.random()*255;
+		// 	body.style.backgroundColor =`rgb(${a},${b},${c})`
+		// }
+        function clickm(){
+            body.style.backgroundColor =`rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`
+        }
+        
+        function startclr(){
+            c = setInterval(clickm, 100);
+        }
+        function stopclr(){
+            clearInterval(c);
+        }
 	</script>
 </body>
 </html>
