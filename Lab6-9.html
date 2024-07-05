@@ -1,0 +1,30 @@
+<!-- Write a JavaScript that handles following mouse events. Add necessary elements. (B)
+JavaScript gives the key code for the key pressed.
+If the key pressed is “a”,”e”,”i”,”o”,”u”, the script should announce that vowel is pressed.
+When the key is released background should change to blue. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="key">
+    <p>Press any key on your keyboard to see the alert.</p>
+    <script>
+        document.getElementById("key").onkeyup = function (event) {
+            a=event.key;
+            if (a=='a' || a=='e' || a=='i' || a=='o'  || a=='u') {
+                alert("Vowel is pressed");
+            }
+            else {
+                alert("Consonant is pressed");
+            }
+        }
+    </script>
+</body>
+
+</html>
