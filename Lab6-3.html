@@ -1,4 +1,4 @@
-<!-- WAP to recognize which mouse event is ƒired. -->
+<!-- WAP to recognize which keyboard event is ƒired -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="btn">Key</button>
+    <input type="text" id="key">
+    <p>Press any key on your keyboard to see the alert.</p>
+    <!-- <button onclick="keydown(event)" id="key">Click</button> -->
     <script>
-        btn = document.getElementById('btn')
-        document.addEventListener('keydown',() =>{btn.innerHTML='keydownned'})
-        document.addEventListener('keyup',() =>{btn.innerHTML='keyup'})
-        document.addEventListener('keypress',() =>{btn.innerHTML='keypressed'})
+        function keydown(event) {
+            // var key=document.getElementById('ke').value;
+            var key = event.key;
+            alert("Keydown event is fired with key: " + key);
+        }
+        document.getElementById("key").addEventListener("keydown", keydown);
     </script>
 </body>
 </html>
