@@ -1,22 +1,21 @@
+<!-- Demonstrate how to create a class in Java Script. -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-	<script> 
-		class cname {
-			constructor(a){
-				console.log(a)
-			}
-		}
-
-		cobj = new cname(5)
-		cobj = new cname(8)
-		cobj = new cname(6)
-		cobj = new cname(4)
-		cobj = new cname(5)
-	</script>
-
+    <script>
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+        }
+        let person1 = new Person("Malay", 19);
+        console.log(person1.name);
+    </script>
 </body>
 </html>
