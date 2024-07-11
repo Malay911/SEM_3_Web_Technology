@@ -1,21 +1,26 @@
+<!-- Demonstrate the Array and Object Destructuring -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-	<script>
-		let obj ={
-			a:'1',
-			b:'2',
-			c:'3'
-		}
-		new_obj = {...obj,d:'69'}
-		console.log(new_obj)
-
-		const {a,...rest} = new_obj
-		console.log(a)		
-		console.log(rest)
-	</script>
+    <script>
+        //object destructuring
+        student=[
+            {
+                name:"Malay",
+                age:20,
+                gender:"Male"
+            }
+        ]
+        const {name,age,gender}=student[0];
+        console.log(name,age,gender);
+        //array destructuring
+        const [a,b,c]=[1,2,3];
+        console.log(a,b,c);
+    </script>
 </body>
 </html>
