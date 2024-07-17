@@ -1,9 +1,9 @@
 const http = require('http');
 const server = http.createServer((req,res)=>{
-    res.end("helloworld")
+    res.end("Hello World")
 })
 
-const port = 2005;
-server.listen(2005,()=>{
-    console.log(`is listening ${port}`)
+const port = 3000;
+server.listen(3000,()=>{
+    console.log("Server started at 3000")
 });
