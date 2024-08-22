@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-const Student = require('./Faculty');
+const Faculty = require('./Faculty');
 
 const connectionString = "mongodb+srv://panaramalay:malaypanara@cluster0.vdhvm.mongodb.net/faculty";
 
@@ -14,13 +14,13 @@ mongoose.connect(connectionString).then(()=>{
 
     //get All
     app.get('/faculties',async (req,res)=>{
-        const ans = await Student.find();
+        const ans = await Faculty.find();
         res.send(ans);
     });
 
     //getbyID
     app.get('/faculties/:id',async (req,res)=>{
-        const ans = await Student.findOne({
+        const ans = await Faculty.findOne({
             id:req.params.id
         });
         res.send(ans);
@@ -28,14 +28,14 @@ mongoose.connect(connectionString).then(()=>{
 
     //create 
     app.post('/faculties',async (req,res)=>{
-        stu = new Student({...req.body});
+        stu = new Faculty({...req.body});
         const ans = await stu.save();
         res.send(ans);
     });
 
     //delete
     app.delete('/faculties/:id',async (req,res)=>{
-        const ans = await Student.deleteOne({
+        const ans = await Faculty.deleteOne({
             id:req.params.id
         });
         res.send(ans);
@@ -43,15 +43,17 @@ mongoose.connect(connectionString).then(()=>{
 
     //update
     app.patch('/faculties/:id',async (req,res)=>{
-        stu = await Student.findOne({id:req.params.id});
+        stu = await Faculty.findOne({id:req.params.id});
 
         stu.name = req.body.name;
         
         const ans = await stu.save();
         res.send(ans);
     });
+
+    //search
     app.get('/faculties/search/:text',async (req,res)=>{
-        const ans = await Student.find({name:{$regex:req.params.text}});
+        const ans = await Faculty.find({name:{$regex:req.params.text}});
 
         res.send(ans);
     });
