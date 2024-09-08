@@ -63,3 +63,31 @@ mongoose.connect(connectionString).then(()=>{
         console.log("Server strated @ 3000");
     });
 });
+
+
+// {
+//   "_id": {
+//     "$oid": "66c718aaef3829713ba7efa2"
+//   },
+//   "id": 1,
+//   "name": "Laptop",
+//   "price": 50000
+// }
+// {
+//   "_id": {
+//     "$oid": "66c71a1c7828c426992f669d"
+//   },
+//   "id": 2,
+//   "name": "Mobile",
+//   "price": 20000,
+//   "__v": 0
+// }
+// {
+//   "_id": {
+//     "$oid": "66c71ba8ec72608f57ac6f3c"
+//   },
+//   "id": 3,
+//   "name": "iPad",
+//   "price": 40000,
+//   "__v": 0
+// }
