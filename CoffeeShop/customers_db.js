@@ -52,7 +52,6 @@ app.delete('/customers/:CustomerID',async(req,res)=>{
     res.send(ans);
 })
 
-
 app.listen(3000,(req,res)=>{
     console.log('Server is running on port 3000');
 });
