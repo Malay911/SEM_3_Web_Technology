@@ -62,3 +62,14 @@ mongoose.connect(connectionString).then(()=>{
         console.log("Server strated @ 3000");
     });
 });
+
+
+// {
+//   "_id": {
+//     "$oid": "66c6b30f49c549075c363355"
+//   },
+//   "id": 2,
+//   "name": "Malay",
+//   "age": 20,
+//   "__v": 0
+// }
