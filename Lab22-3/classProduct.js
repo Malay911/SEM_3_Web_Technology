@@ -53,8 +53,7 @@ mongoose.connect(connectionString).then(()=>{
 
     //search
     app.get('/products/search/:text',async (req,res)=>{
-        const ans = await Product.find({name:{$regex:req.params.text}});
-
+        const ans = await Product.find({name:{$regex:req.params.text}});
         res.send(ans);
     });
 
