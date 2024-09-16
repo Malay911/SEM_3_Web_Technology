@@ -1,7 +1,6 @@
 const express=require('express');
 const bodyParser=require('body-parser');
-const mongoose=require('mongoose');
-
+const mongoose=require('mongoose');
 const customers = require('./customers');
 
 const connectionString="mongodb+srv://panaramalay:malaypanara@cluster0.vdhvm.mongodb.net/CoffeeShop";
