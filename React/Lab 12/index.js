@@ -9,17 +9,7 @@ import Layout from './Lab12_Components.js/Layout';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <>
-//     <App />
-//     <Home/>
-//     <Game/>
-//     <xyz/>
-//     <button onClick={()=>{
-//       root.render(<App/>)
-//     }} >Home</button>
-//   </>
-// );
+
 root.render(
   <>
     <BrowserRouter>
