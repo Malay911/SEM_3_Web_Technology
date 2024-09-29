@@ -29,7 +29,9 @@ function Layout(){
         </div>
         </nav>
         <br/>
+        
         <Outlet/>
+        
         </>
     );
 }
