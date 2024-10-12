@@ -1,7 +1,9 @@
 // Create a webapp in NodeJS which reads ƒles like about.txt, contact.txt and display it using express
+
 const express = require('express');
 const app = express();
 const fs = require('fs')
+
 app.get('/home', (req, res) => {
     fs.readFile('abc.txt', (err, data) => {
         res.send(data.toString());
