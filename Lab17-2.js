@@ -1,5 +1,6 @@
 const path = require('path');
 const filePath = "D:\\Darshan University\\Data\\BTech\\Sem-3\\WT\\2024\\Codes\\A\\WT_A\\NodeJS\\pathDemo.js";
+
 ans1 = path.dirname(filePath);
 ans2 = path.basename(filePath);
 ans3 = path.extname(filePath);
