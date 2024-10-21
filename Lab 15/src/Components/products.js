@@ -11,6 +11,7 @@ function Displayproducts(){
             </div>
         )
     })
+
     return(
         <>
             <div class="form-floating mb-3 col-lg-2">

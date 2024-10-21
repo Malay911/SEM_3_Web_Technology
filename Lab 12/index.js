@@ -7,7 +7,6 @@ import Contact from './Lab12_Components.js/Contact';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './Lab12_Components.js/Layout';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
