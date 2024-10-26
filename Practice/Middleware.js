@@ -7,6 +7,7 @@ app.use(bodyParser.urlencoded());
 app.use('/admin',(req,res,next)=>{
     console.log("req.originalUrl",req.originalUrl);
     console.log("req.baseUrl",req.baseUrl);
+
     console.log("req.path",req.path);
     
     if(req.body.UN=="arjun" && req.body.PW=="bala"){
