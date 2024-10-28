@@ -7,6 +7,7 @@ console.log(os.constants);
 console.log(os.cpus());
 
 console.log(os.devNull);
+
 console.log(os.endianness());
 console.log(os.homedir());
 console.log(os.hostname());
