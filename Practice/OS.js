@@ -11,6 +11,7 @@ console.log(os.devNull);
 console.log(os.endianness());
 
 console.log(os.homedir());
+
 console.log(os.hostname());
 console.log(os.loadavg());
 console.log(os.networkInterfaces());
