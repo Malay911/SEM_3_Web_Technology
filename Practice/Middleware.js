@@ -32,7 +32,6 @@ app.get('/student/second',(req,res)=>{
     res.send("Second from student")
 })
 
-
 app.get('/demo',(req,res,next)=>{
     console.log("First Function");
     next('route');
