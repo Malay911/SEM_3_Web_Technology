@@ -31,5 +31,6 @@ console.log(os.freemem());
 console.log(os.totalmem());
 
 console.log(os.machine());
+
 console.log(os.uptime());
 console.log(os.version());
